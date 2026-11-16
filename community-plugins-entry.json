@@ -1,0 +1,13 @@
+{
+  "name": "Pomodoro Focus & 1-Min Warning",
+  "shortDescription": "Focuses Super Productivity when the Pomodoro timer expires and sends configurable notifications 1 minute before the end.",
+  "url": "https://github.com/jkas6607/super-productivity-pomodoro-focus",
+  "author": "jkas6607",
+  "authorUrl": "https://github.com/jkas6607",
+  "id": "pomodoro-focus-notifier",
+  "release": {
+    "version": "1.0.0",
+    "downloadUrl": "https://github.com/jkas6607/super-productivity-pomodoro-focus/releases/download/v1.0.0/plugin.zip",
+    "sha256": "d8300c332e6e93a66a937bf5aa6bf8217999fa940140bc2f922e0f251fe14da5"
+  }
+}

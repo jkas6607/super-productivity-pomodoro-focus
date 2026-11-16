@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Pomodoro Focus & Benachrichtigungen",
+  "properties": {
+    "focusOnWorkEnd": {
+      "type": "boolean",
+      "title": "App nach Pomodoro-Ende fokussieren",
+      "description": "Bringt das Super-Productivity-Fenster in den Vordergrund, sobald der Pomodoro-Timer abgelaufen ist.",
+      "default": true
+    },
+    "focusOnBreakEnd": {
+      "type": "boolean",
+      "title": "App nach Pausen-Ende fokussieren",
+      "description": "Bringt das Super-Productivity-Fenster in den Vordergrund, sobald eine Pomodoro-Pause abgelaufen ist.",
+      "default": false
+    },
+    "enableOneMinuteWarning": {
+      "type": "boolean",
+      "title": "Vorwarn-Benachrichtigung aktivieren",
+      "description": "Sendet eine Benachrichtigung kurz vor Ablauf der Pomodoro-Arbeitsphase (Standard: 1 Minute vorher).",
+      "default": true
+    },
+    "warningSeconds": {
+      "type": "integer",
+      "title": "Vorwarnzeit (in Sekunden)",
+      "description": "Wie viele Sekunden vor Ablauf des Timers gewarnt werden soll (Standard: 60 = 1 Minute).",
+      "default": 60,
+      "minimum": 5,
+      "maximum": 600
+    },
+    "warningType": {
+      "type": "string",
+      "title": "Benachrichtigungs-Art",
+      "description": "Wo die Vorwarnung angezeigt werden soll.",
+      "enum": ["notify", "snack", "both"],
+      "default": "notify"
+    },
+    "warningTitle": {
+      "type": "string",
+      "title": "Titel der System-Benachrichtigung",
+      "default": "Pomodoro: Noch 1 Minute"
+    },
+    "warningMessage": {
+      "type": "string",
+      "title": "Text der Benachrichtigung",
+      "default": "Deine aktuelle Pomodoro-Session endet in 1 Minute."
+    }
+  }
+}

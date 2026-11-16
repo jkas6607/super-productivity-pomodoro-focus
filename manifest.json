@@ -1,0 +1,16 @@
+{
+  "id": "pomodoro-focus-notifier",
+  "name": "Pomodoro Focus & 1-Min Warning",
+  "version": "1.0.0",
+  "manifestVersion": 1,
+  "minSupVersion": "14.0.0",
+  "description": "Fokussiert Super Productivity automatisch nach Ablauf des Pomodoro-Timers und sendet konfigurierbare Benachrichtigungen vor Ablauf.",
+  "author": "jkas6607",
+  "iFrame": false,
+  "isSkipMenuEntry": true,
+  "icon": "icon.svg",
+  "jsonSchemaCfg": "config-schema.json",
+  "hooks": ["action", "persistedDataChanged"],
+  "permissions": ["notify", "showSnack", "getConfig", "isWindowFocused"],
+  "dataSharing": []
+}
