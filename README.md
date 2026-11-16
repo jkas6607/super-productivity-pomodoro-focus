@@ -1,26 +1,22 @@
 # Pomodoro Focus & 1-Min Warning (Super Productivity Plugin)
 
-Ein leichtgewichtiges Plugin für **Super Productivity** (Desktop-App), das zwei Probleme löst:
+A lightweight plugin for **Super Productivity** (Desktop app) that solves two common issues:
 
-1. **App automatisch fokussieren nach Pomodoro-Ende**: Sobald der Pomodoro-Timer abgelaufen ist, wird das Super-Productivity-Fenster über `window.ea.showOrFocus()` in den Vordergrund geholt (optional auch nach Pausen-Ende).
-2. **Konfigurierbare 1-Minuten-Vorwarnung**: Sendet eine konfigurierbare Benachrichtigung (System-Notification, In-App-Snackbar oder beides), wenn noch 1 Minute (bzw. eine frei einstellbare Zeit in Sekunden) übrig ist.
+1. **Automatically focus the app when the Pomodoro timer expires**: As soon as a Pomodoro work session ends, the Super Productivity window is brought to the foreground via `window.ea.showOrFocus()` (optionally also when a break ends).
+2. **Configurable 1-minute warning notification**: Sends a configurable notification (OS system notification, in-app snackbar, or both) when 1 minute (or a custom number of seconds) remains.
 
 ## Installation
 
-1. Plugin packen (falls noch nicht geschehen):
-   ```bash
-   node scripts/pack.mjs
-   ```
-   Dadurch wird `plugin.zip` erzeugt.
-2. In Super Productivity öffnen: **Einstellungen → Plugins → Plugin-Datei auswählen** und `plugin.zip` hochladen.
+1. Download `plugin.zip` from the latest release (or pack it locally with `node scripts/pack.mjs`).
+2. In Super Productivity, open **Settings → Plugins → Choose Plugin File** and select `plugin.zip`.
 
-## Konfiguration
+## Configuration
 
-In **Einstellungen → Plugins** beim Plugin auf **Konfigurieren** klicken:
+In **Settings → Plugins**, click **Configure** on the plugin:
 
-- **App nach Pomodoro-Ende fokussieren** (Standard: `true`)
-- **App nach Pausen-Ende fokussieren** (Standard: `false`)
-- **Vorwarn-Benachrichtigung aktivieren** (Standard: `true`)
-- **Vorwarnzeit (in Sekunden)** (Standard: `60`)
-- **Benachrichtigungs-Art**: `notify` (System-Benachrichtigung), `snack` (In-App-Hinweis) oder `both` (Beides)
-- **Titel & Text der Benachrichtigung** frei anpassbar
+- **Focus app on Pomodoro end** (default: `true`)
+- **Focus app on break end** (default: `false`)
+- **Enable pre-end warning notification** (default: `true`)
+- **Warning time (in seconds)** (default: `60`, range: `5–600`)
+- **Notification type**: `notify` (system notification), `snack` (in-app snackbar), or `both`
+- **Notification title & message**: Customizable text
